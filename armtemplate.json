@@ -11,7 +11,7 @@
   "parameters": {
     "webAppName": {
       "type": "string",
-      "defaultValue": "[format('webApp-{0}', uniqueString(resourceGroup().id))]",
+      "defaultValue": "[format('ado-use-case-classic-arm-{0}', uniqueString(resourceGroup().id))]",
       "minLength": 2,
       "metadata": {
         "description": "Web app name."
@@ -26,7 +26,7 @@
     },
     "sku": {
       "type": "string",
-      "defaultValue": "F1",
+      "defaultValue": "S1",
       "metadata": {
         "description": "The SKU of App Service Plan."
       }
